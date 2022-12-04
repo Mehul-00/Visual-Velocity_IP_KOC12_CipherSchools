@@ -1,0 +1,258 @@
+:root{
+    --main-color: rgb(1, 0, 40);
+    --second-color: rgb(255, 255, 255);
+    --color: rgb(0, 255, 255);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--second-color);
+}
+/* Home Page */
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: relative;
+    background-color: var(--main-color);
+}
+nav .logo img{
+    float: left;
+    cursor: pointer;
+    width: 14rem;
+    padding: 0.5rem;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--color);
+    transition: all 0.4s ease 0s;
+}
+.affs {
+  background-image: url(Images/Image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+.affs button{
+  margin: 12rem 43rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--main-color);
+  border: 1rem solid var(--main-color);
+  border-radius: 0.2rem;
+}
+.affs button a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
+}
+.affs button a:hover{
+  color: var(--color);
+}
+.advantages h2{
+  background-color: var(--main-color);
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages .list1{
+  list-style: none;
+  color: var(--main-color);
+  text-align: center;
+  padding: 4rem;
+  background: var(--color);
+  font-size: x-large;
+  border: 1rem solid var(--main-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem;
+}
+.advantages li{
+  list-style: none;
+  color: var(--main-color);
+  text-align: center;
+  padding: 4rem;
+  background: var(--color);
+  font-size: x-large;
+  border: 1rem solid var(--main-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem;
+}
+.advantages li:hover{
+  transform:translateY(-10px) ;
+}
+.offers h2{
+  background-color: var(--main-color);
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.offers li{
+  list-style: none;
+  color: var(--main-color);
+  text-align: center;
+  padding: 4rem;
+  background: var(--color);
+  font-size: x-large;
+  border: 1rem solid var(--main-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem;
+}
+.offers li:hover{
+  transform:translateY(-10px) ;
+}
+.contact{
+  margin-bottom: -2rem;
+}
+.contact h2{
+  background-color: var(--main-color);
+  padding: 2rem;
+  text-transform: uppercase;
+  font-style:italic;
+}
+.contact h5{
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: large;
+  text-align: right;
+  padding-right: 13.5rem;
+}
+.contact li{
+  background-color: var(--main-color);
+  padding-left: 75rem;
+  padding-bottom: 1rem;
+  text-align: left;
+  padding: auto;
+  
+}
+/* About Us Page */
+.about{
+  margin-bottom: 2rem; 
+}
+.about h2{
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--main-color);
+  text-transform: uppercase;
+}
+.about h2:hover{
+  color: var(--color);
+}
+.about p{
+  font-size: larger;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  color: var(--main-color);
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 0.1rem;
+  line-height: 2rem;
+}
+/* Product Page */
+.heading {
+  text-align: center;
+  background-color: var(--main-color);
+  margin-bottom: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+.heading p{
+  font-size: 2rem;
+  color: var(--color);
+}
+.heading p:hover{
+  color: var(--second-color);
+}  
+.groceries {
+  background: var(--second-color);
+  border-radius: 2rem;
+}
+
+.groceries-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, auto));
+  gap: 3rem;
+  padding: 0 50px;
+}
+
+.groceries-container .box {
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: rgb(0, 0, 0);
+}
+
+.groceries-container .box:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.groceries-container .box img {
+  border-radius: 1rem;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.groceries-container .box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  float: right;
+  color: var(--color);
+}
+
+.groceries-container .box .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}.groceries-container .box .content .text p {
+  font-size: 0.8rem;
+}
+.home-button{
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--color);
+}
+.home-button button{
+  background: var(--main-color);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  color: var(--color);
+}
+.home-button a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color);
+}
+.home-button a:hover{
+  color: var(--second-color);
+}
+.copyright {
+  margin-top: 2rem;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  background: var(--main-color);
+}
